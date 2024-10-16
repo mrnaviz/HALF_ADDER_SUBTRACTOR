@@ -2,6 +2,10 @@
 
 Implementation-of-Half-Adder-and-Half Subtractor-circuit
 
+### DEVELOPED BY : NAVEEN KUMAR B
+### REG NO : 212222230091
+
+
 **AIM:**
 
 To design a half adder and half subtractor circuit and verify its truth table in Quartus using Verilog programming.
@@ -50,12 +54,46 @@ Figure -02 HALF Subtractor
 
 **Program:**
 
-/* Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
 
-Developed by: RegisterNumber:*/
+ Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
 
-**RTL Schematic**
 
-**Output/TIMING Waveform**
+### HALF ADDER
+```
+module ex03(a,b,sum,carry);
+input a,b;
+output sum, carry;
+assign sum=(a^b);
+assign carry=(a&b);
+endmodule
+```
+### HALF SUBTRACTOR
+```
+module ex03m01(a,b,diff,borr);
+input a,b;
+output diff,borr;
+assign diff=(a^b);
+assign borr=(~a&b);
+endmodule
+```
+### HALF ADDER
+
+![image](https://github.com/user-attachments/assets/e114a544-c363-4ffc-b83a-e993c0d29509)
+
+### HALF SUBTRACTOR
+
+![image](https://github.com/user-attachments/assets/9e22bff7-19b0-4057-a938-d4bc9bea6af1)
+
+Output/TIMING Waveform
+
+
+### HALF ADDER
+
+![image](https://github.com/user-attachments/assets/cf1a6d2b-43e6-466b-80d7-1f77c6e86558)
+
+### HALF SUBTRACTOR
+
+![image](https://github.com/user-attachments/assets/ae05dd8e-ff69-46de-ad9c-7d1633ecb66d)
 
 **Result:**
+The code is excecuted successfully.
